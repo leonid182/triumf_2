@@ -1,0 +1,86 @@
+@include desktop {
+    .header__burger {
+        display: block;
+    }
+    .logo {
+        margin-top: -6vh;
+        margin-left: 20px;
+    }
+    .header__nav {
+        display: none;
+    }
+
+    .main__photos-second {
+       display: none;
+    }
+    .main__photos-first {
+        margin-bottom:190px;
+    }
+}
+
+@include desktop_small {
+    body {
+        background-size:200%;
+    }
+    .main__photos-first {
+        margin-bottom:170px;
+    }
+}
+
+@include table {
+    .main__photos {
+        display: none;
+    }
+    .footer {
+        margin-top: -3vh;
+    }
+}
+@include table_small {
+    
+    .header__nav.is__active {
+        
+       margin-left: -250px;
+    }
+    .footer__table_small {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+}
+@include mobile {
+    .letters {
+        display: none;
+    }
+
+    .header__nav.is__active {
+        
+        padding-right: 300px;
+     }
+
+     .main__slogan p{
+        font-size: 25px;
+     }
+
+      
+     .main__button button{
+            width: 100px;
+            height: 30px;
+            margin-top: 25px;
+            border-radius: 10px;
+            background-color: $color-yellow;
+            border: none;
+            font-family: 'Rubik-main';
+            color: $color-blue;
+        }
+     
+    
+}
+@include mobile_small {
+    
+
+    .header__nav.is__active {
+         margin-left: -400px;
+   
+     }
+}

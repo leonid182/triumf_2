@@ -1,0 +1,275 @@
+@import "./vars.scss";
+@import "./fonts.scss";
+@import "./screens.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../../images/background.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 200px;
+    
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    overflow: hidden;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    // min-width: 100vh;
+
+}
+
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+a {
+    text-decoration: none;
+    color: $color-blue;
+}
+
+a:hover {
+   
+    background-color: $color-yellow;
+   padding: 10px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+li {
+    list-style: none;
+}
+
+.df-jc-sb {
+    display: flex;
+    justify-content: space-between;
+}
+.df-jc-se {
+    display: flex;
+    justify-content: space-evenly;
+}
+.df-jc-c {
+    display: flex;
+    justify-content: center;
+}
+.df-ai-c {
+    display: flex;
+    align-items: center;
+}
+.df-ai-fe {
+    display: flex;
+    align-items: flex-end;
+}
+
+//main__logo
+
+
+
+.main__logo {
+    background-color: $color-white;
+    position: relative;
+    height: 10vh;
+    margin-top: -20px;
+}
+.letters {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate( -50%);
+    z-index: 0;
+}
+
+//header
+
+header {
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    background-color: $color-white;
+    
+    
+}
+
+.header__nav ul {
+    width: 100vh;
+    margin-left: -30%;
+    margin-top: 100px;
+    font-family: "Rubik-menu";
+    z-index: 1;
+    
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    z-index: 2;
+
+}
+
+
+//main
+
+
+
+.main__slogan p {
+    font-family: 'Rubik-exrtra-bold';
+    font-size: 50px;
+    font-weight: 700;
+    color: $color-blue2;
+    letter-spacing:1vh;
+}
+
+.main__button {
+    display: flex;
+    justify-content: center;
+    
+
+     button{
+        width: 150px;
+        height: 50px;
+        margin-top: 25px;
+        border-radius: 10px;
+        background-color: $color-yellow;
+        border: none;
+        font-family: 'Rubik-main';
+        color: $color-blue;
+    }
+
+    button:hover {
+        color: $color-white;
+        background-color: $color-blue;
+    }
+
+}
+
+.main__photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 1;
+
+    .main__photos-first{
+        margin-top: 100px;
+    }
+    
+}
+
+
+
+
+
+//footer
+
+.footer {
+    background-image: url(../../images/background__cloud.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: auto;
+    font-family: 'Rubik-main';
+    padding-top: 170px;
+    margin-top: -320px;
+  
+    z-index: 5;
+
+    .footer_right {
+        .footer_right-info {
+
+            display: flex;
+            flex-direction: column;
+           
+            h2 {
+                color: $color-yellow;
+            }
+
+            button {
+                background-color: $color-yellow;
+                color: $color-blue;
+                height: 40px;
+                font-family: 'Rubok-main';
+                border: none;
+                border-radius: 10px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            button:hover {
+                color: $color-white;
+                background-color: $color-blue;
+            }
+
+        }
+    }
+    
+}
+
+
+//burger 
+
+.header__burger {
+    width: 52px;
+    height: 52px;
+    background-image: url(../../images/horizontal_menu_burger_icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    z-index: 999;
+}
+
+
+.header__burger.is__active {
+    display: block;
+    background-image: url(../../images/cross_icon.svg);
+
+}
+.header__nav.is__active {
+    display: block;
+    grid-gap: 52px;
+    z-index: 6;
+    
+}
+
+.header__nav-ul.is__active-menu-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 15px;
+    z-index: 5;
+}
+
+.header.is__active-background {
+    background-color: $color-white;
+    height: 100vh;
+    z-index: 4;
+}
+
+
+
+//ooops
+.main__ooops {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+   
+    
+}
+
+
+
+
+
+
+@import "./media.scss";
+

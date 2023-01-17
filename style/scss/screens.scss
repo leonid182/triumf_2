@@ -1,0 +1,30 @@
+@mixin desktop(){
+    @media (max-width:$breakpoints__desktop) {
+        @content;
+    }
+}
+@mixin desktop_small(){
+    @media (max-width:$breakpoints__desktop_small) {
+        @content;
+    }
+}
+@mixin table(){
+    @media (max-width:$breakpoints__table) {
+        @content;
+    }
+}
+@mixin table_small(){
+    @media (max-width:$breakpoints__table_small) {
+        @content;
+    }
+}
+@mixin mobile(){
+    @media (max-width:$breakpoints__mobile) {
+        @content;
+    }
+}
+@mixin mobile_small(){
+    @media (max-width:$breakpoints__mobile_small) {
+        @content;
+    }
+}
