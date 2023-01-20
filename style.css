@@ -203,7 +203,7 @@ header {
 
 .header__burger.is__active {
   display: block;
-  background-image: url(../../images/cross-icon.png);
+  background-image: url(../../images/cross_icon.svg);
 }
 
 .header__nav.is__active {
