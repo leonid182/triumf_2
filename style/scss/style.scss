@@ -22,7 +22,7 @@ body {
     box-sizing: content-box;
     display: flex;
     flex-direction: column;
-    // min-width: 100vh;
+    
 
 }
 
@@ -231,7 +231,7 @@ header {
 
 .header__burger.is__active {
     display: block;
-    background-image: url(../../images/cross_icon.svg);
+    background-image: url(../../images/crossicon.svg);
 
 }
 .header__nav.is__active {

@@ -10,3 +10,4 @@ burger.addEventListener('click', ()=>{
     header.classList.toggle('is__active-background');
     
 })
+
