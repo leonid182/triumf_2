@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Rubik-menu";
-  src: url(/fonts/static/Rubik-Medium.ttf);
+  src: url(../fonts/static/Rubik-Medium.ttf);
 }
 @font-face {
   font-family: "Rubik-main";
-  src: url(/fonts/static/Rubik-Light.ttf);
+  src: url(../fonts/static/Rubik-Light.ttf);
 }
 @font-face {
   font-family: "Rubik-extra-bold";
-  src: url(/fonts/static/Rubik-ExtraBold.ttf);
+  src: url(../fonts/static/Rubik-ExtraBold.ttf);
 }
 @font-face {
   font-family: "Rubik-bold";
-  src: url(/fonts/static/Rubik-Bold.ttf);
+  src: url(../fonts/static/Rubik-Bold.ttf);
 }
 body {
   margin: 0;
@@ -190,7 +190,7 @@ header {
 .header__burger {
   width: 52px;
   height: 52px;
-  background-image: url(../../images/burger-icon-menu.png);
+  background-image: url(../images/burger-icon-menu.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
@@ -202,7 +202,7 @@ header {
 
 .header__burger.is__active {
   display: block;
-  background-image: url(../../images/cross-icon.png);
+  background-image: url(../images/cross-icon.png);
 }
 
 .header__nav.is__active {

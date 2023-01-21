@@ -218,7 +218,7 @@ header {
 .header__burger {
     width: 52px;
     height: 52px;
-    background-image: url(../../images/burger-icon-menu.png);
+    background-image: url(../images/burger-icon-menu.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: none;
@@ -231,7 +231,7 @@ header {
 
 .header__burger.is__active {
     display: block;
-    background-image: url(../../images/cross-icon.png);
+    background-image: url(../images/cross-icon.png);
 
 }
 .header__nav.is__active {
