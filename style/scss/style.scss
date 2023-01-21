@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(/images/background.svg);
+    background-image: url(../images/background.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center 200px;
@@ -172,7 +172,7 @@ header {
 //footer
 
 .footer {
-    background-image: url(/images/background__cloud.svg);
+    background-image: url(../images/background__cloud.svg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: auto;
