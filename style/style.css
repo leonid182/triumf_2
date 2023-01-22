@@ -106,7 +106,7 @@ header {
 
 .header__nav ul {
   width: 100vh;
-  margin-left: -30%;
+  margin-left: -33%;
   margin-top: 100px;
   font-family: "Rubik-menu";
   z-index: 1;
@@ -147,12 +147,14 @@ header {
 }
 
 .main__photos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
-.main__photos .main__photos-first {
-  margin-top: 100px;
+.main__photos .main__photos-main {
+  margin-left: -100px;
+  max-width: 100%;
+  height: auto;
 }
 
 .footer {
@@ -162,7 +164,7 @@ header {
   margin-top: auto;
   font-family: "Rubik-main";
   padding-top: 170px;
-  margin-top: -320px;
+  margin-top: -190px;
   z-index: 5;
 }
 .footer .footer_right .footer_right-info {
@@ -251,6 +253,9 @@ header {
   }
   .main__photos-first {
     margin-bottom: 190px;
+  }
+  .footer {
+    margin-top: -21vh;
   }
 }
 @media (max-width: 940px) {
